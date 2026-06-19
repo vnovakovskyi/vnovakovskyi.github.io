@@ -1,0 +1,48 @@
+---
+layout: default
+permalink: /
+---
+<section class="intro">
+  <h1>Hi, I'm {{ site.author }} 👋</h1>
+  <p>
+    Senior Java Software Engineer / Tech Lead with professional experience in
+    software development since 2015, specializing in backend development with
+    Java, Spring Boot, and Kotlin.
+  </p>
+  <p>
+    Experienced in building and maintaining complex backend systems, banking
+    platforms, cloud-based infrastructure, and observability solutions. Strong
+    background in technical leadership, mentoring, engineering process
+    improvement, and platform stability.
+  </p>
+  <p>
+    From 2019 to late 2024, I led Java programming courses, helping developers
+    and newcomers improve their skills in Java, frameworks, and tools.
+  </p>
+  <p>
+    This is where I keep my technical notes — practical write-ups on backend
+    engineering, systems, and the problems I run into while building software.
+  </p>
+  <nav class="social">
+    {% if site.social.github %}<a href="{{ site.social.github }}" rel="noopener" target="_blank">GitHub</a>{% endif %}
+    {% if site.social.linkedin %}<a href="{{ site.social.linkedin }}" rel="noopener" target="_blank">LinkedIn</a>{% endif %}
+    {% if site.social.telegram %}<a href="{{ site.social.telegram }}" rel="noopener" target="_blank">Telegram</a>{% endif %}
+  </nav>
+</section>
+
+<section class="recent">
+  <h2>Latest articles</h2>
+  {% if site.posts.size > 0 %}
+  <ul class="post-list">
+    {% for post in site.posts limit: 5 %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+    </li>
+    {% endfor %}
+  </ul>
+  <p><a href="{{ '/articles/' | relative_url }}">View all articles →</a></p>
+  {% else %}
+  <p>No articles yet — check back soon.</p>
+  {% endif %}
+</section>

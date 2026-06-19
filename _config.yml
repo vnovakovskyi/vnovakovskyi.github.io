@@ -1,0 +1,35 @@
+# --- Site identity ---
+title: Vadym Novakovskyi
+description: Engineering notes and technical articles.
+author: Vadym Novakovskyi
+
+# Site URL (GitHub user site, served at the domain root)
+url: "https://vnovakovskyi.github.io"
+baseurl: ""
+
+# --- Social links (update these with your real profiles) ---
+social:
+  github: https://github.com/vnovakovskyi
+  linkedin: https://www.linkedin.com/in/vadym-novakovskyi/
+  telegram: https://t.me/novakovskyi_v
+
+# --- Build settings ---
+permalink: /:title/
+excerpt_separator: "<!--more-->"
+
+# Every file in _posts/ uses the post layout by default
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+# Keep these out of the built site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - docs/
+  - README.md
+  - vendor/
+  - .idea/
