@@ -12,3 +12,6 @@ Gemfile.lock
 .DS_Store
 .idea/
 .claude/
+
+# Local research/planning notes (kept out of the repo)
+docs/
