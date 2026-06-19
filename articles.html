@@ -1,0 +1,27 @@
+---
+layout: default
+title: Articles
+permalink: /articles/
+---
+<h1>Articles</h1>
+
+{% if site.posts.size > 0 %}
+<ul class="article-list">
+  {% for post in site.posts %}
+  <li class="article-card">
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+    <p class="excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+    {% if post.tags.size > 0 %}
+    <div class="post-tags">
+      {% for tag in post.tags %}
+      <a class="tag" href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}">#{{ tag }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No articles yet.</p>
+{% endif %}
