@@ -137,6 +137,7 @@ p { margin: 0 0 1.1rem; }
 
 .post-content { margin-bottom: 2rem; }
 .post-content img { max-width: 100%; height: auto; }
+.post-content .diagram { display: block; margin: 1.6rem auto; }
 .post-content ul, .post-content ol { padding-left: 1.4rem; }
 .post-content li { margin-bottom: 0.35rem; }
 .post-content blockquote {
