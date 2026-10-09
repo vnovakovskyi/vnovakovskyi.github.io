@@ -66,6 +66,7 @@ a:hover { color: var(--link-hover); text-decoration: underline; }
   margin-left: 1.25rem;
   color: var(--text-muted);
   font-size: 0.95rem;
+  white-space: nowrap;
 }
 .site-nav a:first-child { margin-left: 0; }
 .site-nav a:hover { color: var(--link); }
@@ -84,6 +85,20 @@ p { margin: 0 0 1.1rem; }
 .intro p { color: var(--text); }
 .intro .social { margin-top: 1rem; }
 .intro .social a { margin-right: 1rem; }
+
+/* --- Book a chat --- */
+.book ul { padding-left: 1.4rem; margin: 0 0 1.1rem; }
+.book li { margin-bottom: 0.35rem; }
+.button {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background: var(--link);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 6px;
+}
+.button:hover { background: var(--link-hover); color: #ffffff; text-decoration: none; }
 
 /* --- Compact post list (home + tags) --- */
 .post-list { list-style: none; padding: 0; margin: 0; }

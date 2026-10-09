@@ -13,6 +13,9 @@ social:
   linkedin: https://www.linkedin.com/in/vadym-novakovskyi/
   telegram: https://t.me/novakovskyi_v
 
+# --- Booking (Cal.com) ---
+booking_url: https://cal.com/vadym-v8lhjo/30min
+
 # --- Build settings ---
 permalink: /:title/
 excerpt_separator: "<!--more-->"
